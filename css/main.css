@@ -2,32 +2,85 @@
   /* outline: red 1px solid; */
 }
 
+html {
+	/* max-height:768px; */
+}
 body {
   background-color: black;
+  min-width: 1133px;
+  max-height: 900px;
+  /* margin: auto; */
+}
+ 
+#tv {
+	width: 1370px; 
+	height: 820px;
+	/* display: block; */
+	/* max-width: 1391px; */
+	/* max-height: 861px; */
+	position: absolute;
+	margin: -90px 0 0 -100px;
+	background-image: url(../images/tv.png), url(../images/shading.png);
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+	/* opacity: 0.8; */
+}
+	
+	
+.main {
+  height: 650px;
+  /* display:block; */
+  /* background: white; */
+  /* position: relative; */
+  background-image: url('../images/background2.jpg');
+  background-repeat: no-repeat;
+	background-size: 100% 100%;
+  
+  /* margin: 10px auto; */
+  margin: 130px 0 0 160px;
+  /* float: left; */
+  /* padding: 20px 5px 5px 6px; */
+  /* width: 1133px; */	
+	
+  width: 924px;
+	
+  /* height:100%; */
+	
+  /* max-width: 1391px; */
+	
+  /* max-height: 861px; */
+  
+
 }
 
-.main {
-  background-color: white;
-  margin-top: 110px;
-  padding-left: 100px;
-  min-width: 1200px;
-  height: 500px;
+
+	
+	
+	
 }
 
 .ryu { 
 	float: left;
+	width:200px;
+	
 }
 
 .hadouken {
-	float: left;
+	/* float: left; */
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   width: 659px;
   height: 494px;
+  position: relative;
+  padding: 0 0 0 190px;
+  top: 167px;
+  /* left: -6px; */
+  
+  
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
   display: none;
 } 
 
@@ -46,18 +99,44 @@ body {
   /* display: block; */
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif');
+  /* display: block; */
+} 
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   background-repeat: no-repeat;
-}
+}  
  
 .hadouken {
   background-image: url('../images/hadouken.gif');
   width: 156px; 
   height: 90px;
   display: none;
-  position: relative;
-  top: 167px;
-  left: -156px;
+  position: absolute;
+  top: 355px;
+  left: 483px;
   float: left; 
 }
 
+#instructions {
+  background: #fff;
+  border-bottom-right-radius: 20px 30px;
+  width: 218px;
+  height: 230px;
+  margin:0px 0 0 1038px;
+  padding:30px 20px
+30px 40px;
+border:7px solid black;
+  opacity:0.7;
+  font-family:Arial;
+  font-size:19px;
+  line-height:28px;
+  color:red;
+
+}
+
+#instructions ol {
+	list-style-type:decimal;
+
+}
